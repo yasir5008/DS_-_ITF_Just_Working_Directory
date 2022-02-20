@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RDCMan programVersion="2.7" schemaVersion="3">
+  <file>
+    <credentialsProfiles />
+    <properties>
+      <expanded>True</expanded>
+      <name>Yasin</name>
+    </properties>
+    <displaySettings inherit="None">
+      <liveThumbnailUpdates>True</liveThumbnailUpdates>
+      <allowThumbnailSessionInteraction>False</allowThumbnailSessionInteraction>
+      <showDisconnectedThumbnails>True</showDisconnectedThumbnails>
+      <thumbnailScale>1</thumbnailScale>
+      <smartSizeDockedWindows>True</smartSizeDockedWindows>
+      <smartSizeUndockedWindows>True</smartSizeUndockedWindows>
+    </displaySettings>
+    <server>
+      <properties>
+        <displayName>ENVA</displayName>
+        <name>173.249.47.98</name>
+      </properties>
+      <logonCredentials inherit="None">
+        <profileName scope="Local">Custom</profileName>
+        <userName>huseyin</userName>
+        <password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA410Yrihq2U+o6bvFqWXrzQAAAAACAAAAAAAQZgAAAAEAACAAAACFR2xbKQZ8vJlZqR5I+Uc76YWc/goMTFslTgOskQAX6wAAAAAOgAAAAAIAACAAAAAFlsUhM1SgDwx6xw/Xz3+PrzjetCpfaVhQAFfc2A22HCAAAAB1l4NoDyZjmqGkYn+VCw8FnMPIITI8b6aBSpIX/dOEIEAAAAB1Wwm9P6vcNNhLFvGv90tgpZwjG0YrfpQYOq7mM8XGLL20rxJfPEqV1NeMt0A2gupdyYKTRhFCEjdgIEAW4JIK</password>
+        <domain>DESKTOP-1H3G0Q2</domain>
+      </logonCredentials>
+    </server>
+    <server>
+      <properties>
+        <displayName>Enva - Yeni</displayName>
+        <name>94.130.186.165:38152</name>
+      </properties>
+      <logonCredentials inherit="None">
+        <profileName scope="Local">Custom</profileName>
+        <userName>USER2</userName>
+        <password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOe+iZ0ggbkmkujflC/s94gAAAAACAAAAAAAQZgAAAAEAACAAAAB1d7LMu97lfwQGv1eqeFwSn1/b0iIClgvwycWSckhgngAAAAAOgAAAAAIAACAAAABvfThleESG5EbO49DW+K6u4fS5lcqy7UkeINrfkxvxayAAAADb+vDAukDG6le0QKqW8zmo/ynXjyVtc4BzVv7nnT042UAAAAA34y17dD2d9tF9YPPFTEIMDixjz1dDEUUDZCtGJIMJWRZ5KDbPJndClJKXqUr/BK/nyeIQqjKXnYdIk209hkvF</password>
+        <domain>DESKTOP-3HJVM6I</domain>
+      </logonCredentials>
+      <displaySettings inherit="None">
+        <thumbnailScale>1</thumbnailScale>
+        <smartSizeDockedWindows>True</smartSizeDockedWindows>
+        <smartSizeUndockedWindows>True</smartSizeUndockedWindows>
+      </displaySettings>
+    </server>
+    <server>
+      <properties>
+        <displayName>MAYTRADE</displayName>
+        <name>207.180.228.122</name>
+      </properties>
+      <logonCredentials inherit="None">
+        <profileName scope="Local">Custom</profileName>
+        <userName>huseyin</userName>
+        <password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA410Yrihq2U+o6bvFqWXrzQAAAAACAAAAAAAQZgAAAAEAACAAAABWsZxIzcoHLjY7RrB1khj6BkLfJobkghNhLOiqgMn3MQAAAAAOgAAAAAIAACAAAACKgiVdiEE8H1CaPIAeuCLJ/dp91HchH+Iqawi9D8XOWCAAAAAYqxopiemWE4kXyyGf+IYgGeKo9GCXrGz6svHEAT6HfEAAAADv71yx8ir7POwD0WV9Z/1Vf2CJpNkos+duC0/ESqmfEcPpCUIvVuMNghAXjwBILF3RNGLUTUzLix9EY/QDjzj5</password>
+        <domain>DESKTOP-1H3G0Q2</domain>
+      </logonCredentials>
+    </server>
+    <server>
+      <properties>
+        <displayName>TK/VDC</displayName>
+        <name>207.180.212.205</name>
+      </properties>
+      <logonCredentials inherit="None">
+        <profileName scope="Local">Custom</profileName>
+        <userName>Huseyin</userName>
+        <password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA410Yrihq2U+o6bvFqWXrzQAAAAACAAAAAAAQZgAAAAEAACAAAAC1/PBKEim++Pa3MJaoXaBjhupMZgnbIP9aQuzUPRnSjAAAAAAOgAAAAAIAACAAAAClSKXu8BMFgMbvQv7hN19OS2Ll5RoVK7EVJjrODi7ssyAAAAB9PcRTlMJkMJQQFPVSjmtsI2/aRUeoqWmoO99nKYYp9kAAAAC+0DdcuU5qWqzyMHQQ70ZMrLiJn4JRUVVBBYJBblg/hBPpFYkt9fn3Q1Xc/AvNa2eL+LTy0KUT0V9kKVBSZ2RS</password>
+        <domain>DESKTOP-1H3G0Q2</domain>
+      </logonCredentials>
+    </server>
+    <server>
+      <properties>
+        <displayName>RMS / TMP</displayName>
+        <name>164.68.121.236</name>
+      </properties>
+      <logonCredentials inherit="None">
+        <profileName scope="Local">Custom</profileName>
+        <userName>huseyin</userName>
+        <password>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA410Yrihq2U+o6bvFqWXrzQAAAAACAAAAAAAQZgAAAAEAACAAAADYyzg+nBOdDZVYTokaeIZKy/3ezA4pMa/DA3dNTc1arwAAAAAOgAAAAAIAACAAAAA+/iFipyw/kPNT395mD6Z0mSc21GUs8Rcp9hg0ocDnhyAAAAAQs9AVnJVQvB430jz3OHenm+NVbu9pUtXSW1l6iKP6IkAAAADpt4J9R0CzbGJypdlvyY0qVxIelr4pZlvMqSUyzxYJivafptbbhsXfLsh5D7tlPHqXpuiFR2S5PC97faTYnZua</password>
+        <domain>DESKTOP-1H3G0Q2</domain>
+      </logonCredentials>
+    </server>
+  </file>
+  <connected />
+  <favorites />
+  <recentlyUsed />
+</RDCMan>

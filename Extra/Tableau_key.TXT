@@ -1,0 +1,26 @@
+Hi makbule,
+
+Please retain this email for your records. You will need the product key and instructions enclosed.
+
+Welcome to Tableau for Students! Your academic license now includes Tableau Desktop, Tableau Prep, and eLearning for free.
+
+The product key below can be used to activate both Tableau Desktop and Tableau Prep on two separate computers, Windows or Mac. This key will expire in one year.
+
+Download Tableau Desktop
+Download Tableau Prep
+Activate with your product key: TCSR-C633-86F0-5A6F-3C8A
+If you're receiving the error "product key is invalid" visit the knowledge base page to resolve your issue.
+Get started with free eLearning online self-paced courses:
+Go to https://elearning.tableau.com
+Create (or login to) your TableauID account, and confirm email address via the TableauID confirmation email
+Go to https://elearning.tableau.com and log on using your TableauID
+Register at the Tableau Learning Center with this Access Key: 1ce14dc1v7vkz-55bbumfy
+These keys are for your personal use only. Please do not share them. Need additional help? check out the FAQ's or submit a case for installation support.
+
+Best,
+
+Tableau Academic Team
+Tableau Software
+
+e: tft@tableau.com
+
