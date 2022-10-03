@@ -1,0 +1,21 @@
+
+
+EC2 instance kur ve calistir.
+VS Code’u ac.
+VS Code sol alttan “Open a Remote Window”a tikla.
+Open SSH Configuration File’a tikla.
+Users/macboook/ssh/config’e tikla.
+Burada instance’in public IPv4 adresini hostname’a kopyala. Ayrica pem key’in path’ini IdentityFile’a kopyala ve kaydet.
+Pem anahtarini desktop’a da kopyalayip config sayfasinda onun path’ini kopyalayabilirim.
+Ardindan yine Open a Remote Window’a tikla ve cikan ekrandan Connect to Host’a tikla ve hostname adlandirma sayfasinda verdiginiz config ismine tikla.
+Baglanti saglandiktan sonra open folder ec2-user klasorune baglan.
+Yeni terminal ac. Su anda cloud’daki bilgisayara baglandin.
+Cd ile home page’e git ve burada .envs adinda bir klasor olustur.
+Ardindan cd .envs ile bu klasorun icine gir ve “python3 -m venv env_streamlit” yaz ve enter’a bas.
+Ardindan “source env_streamlit/bin/activate” yap.
+Ardindan bu env_streamlit adindaki virtual environment’a kuracagimiz kutuphaneleri bir txt explorer’da bir txt dosyasi acarak icine kopyaliyoruz.
+Olusturdugumuz dosyada pakenler ve karsilarinda surumleri var, ornegin seaborn==0.11.2
+Bunlari kurmak icin venv icindeysen “pip3 install -r requirements.txt” yapiyoruz.
+“pip3 list” ile kurulan paketleri goruntuleyebiliyorum.
+Activate yaptigim klasoru deactivate yaparak cikis yapabiliyorum.
+Bu yaptiklarimizin aynisini local’de olusturdugumuz bir klasore de yapiyoruz.

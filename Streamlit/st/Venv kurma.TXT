@@ -1,0 +1,8 @@
+
+python3 venv senv
+
+python3 -m venv senv
+
+source senv/Scripts/activate
+
+pip3 install -r requirements_local_st2.txt

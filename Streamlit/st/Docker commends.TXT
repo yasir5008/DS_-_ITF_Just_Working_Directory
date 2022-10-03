@@ -1,0 +1,166 @@
+ 2. sudo yum update -y
+
+# Install the most recent Docker Community Edition package.
+3. sudo amazon-linux-extras install docker -y
+
+# Starting a docker service
+4. sudo systemctl start docker
+
+# Enable docker service so that docker service can restart automatically after reboots.
+5. sudo systemctl enable docker
+
+# Check if the docker service is up and running.
+6. sudo systemctl status docker
+
+# Check the running containers
+7. sudo docker ps
+
+# - Add the `docker` group to the `ec2-user` to run docker
+# commands without using `sudo`.
+8. sudo usermod -aG docker ec2-user
+
+# - Normally, the user needs to re-login into bash shell for the group `docker` to be effective, but `newgrp` command can be used activate `docker` 
+# group for `ec2-user`, not to re-login into bash shell.
+9. newgrp docker
+
+# from now on we don't have to type sudo
+# check running containers again
+10. 'docker ps' --> same command with 'docker container ls'
+
+# show runnig and stopped containers
+11. docker ps -a
+
+# docker image list
+13.docker image ls
+
+# pull an image --> show from docker hub as well --> tags etc
+14. docker pull ubuntu # --> latest is the default tag
+
+16. docker info
+
+# Create a container from an image
+# only required argument is image name --> ubuntu
+# if the image does not exist on the machine, it is pulled from the registry
+17. docker run -it --name myubuntu ubuntu # --> docker container
+# -it --> opens a virtulal terminal session in docker container
+# - interactive terminal
+
+# container icinde python olmadigini goster
+18. python # in container
+19. apt-get update -y
+20. apt-get install python3
+21. --> check python versions in docker container and in linux sehll in another terminal
+22. --> try to import numpy in python in docker
+21. apt-get install python3-pip
+22. python3 and 
+23. --> import numpy as np
+
+24. terminali kapat --> container will be gone
+25. docker ps
+26. docker ps -a --> will show the exited container
+
+# REMOVING A CONTAINER
+26. docker rm XXX # XXX --> CONATINER ID's first 3 chars
+    docker rm container name --> same thing
+
+27. docker ps -a --> no container w same name
+
+28. history --> summarize all the commands we had so far
+# Detach mode
+# Create a sh to run commands -->docker_runner.sh
+#!/bin/sh
+sudo yum update -y
+sudo amazon-linux-extras install docker -y
+sudo service docker start
+sudo usermod -aG docker ec2-user
+newgrp docker
+systemctl enable docker
+
+27. sh docker_runner.sh
+28. --> starta a new terminal and sh docker_runner.sh
+
+28. docker run -it -d --name myubuntu ubuntu --> this command does not attach the container so we cannot go inside the conatiner immediately but docker run -it --name myubuntu ubuntu --> attach the doctainer immediately
+29. docker ps
+
+# Going inside the docker conatiner
+1. docker exec -it xxx bash
+2. docker attach xxx
+
+# Exit edilmis bir conatineri caslistirma
+docker start xxx
+dcoker attach xxx
+
+# Exit Container
+35. 'CTRL + D' or 'exit'
+36. docker ps 
+37. 'docker start xxx'  and ('docker exec -it xxx bash' or 'docker attach xxx')
+
+40. docker stop xxx
+39. docker start xxx
+
+38. history --> summarize what we have done so far
+23. apt-get install vim -y
+39. ls -l --> list files in docker container
+
+41. docker image ls
+
+# Remove Docker image
+41. docker rmi xxx --> cannot remove stop containers's images
+
+# --rm flag --> removes a container when it stops
+41. docker rm xxx
+42. docker run -it -d --rm --name myubuntu ubuntu
+43. docker ps 
+44. docker attach xxx
+45. --> exit the container #--> exit
+46. docker ps -a # --> container is gone
+
+# VOLUME MOUNTING
+47. docker run -it -d --rm --name myubuntu ubuntu
+48. docker attach xxx
+49. apt-get update -y
+50. ls 
+51. mkdir my_data && cd my_data
+52. apt-get install vim -y
+53. vim my_test_file --> hello dear friends. This is inside docker --> ESC :wq
+54. cat my_test_file
+55. ls
+56. exit # --> exit the container 
+57. docker ps -a # --> nothing is presistent any more
+
+58. docker run -it -d --name myubuntu ubuntu
+48. docker attach xxx
+49. apt-get update -y
+50. ls
+51. mkdir my_data && cd my_data
+52. apt-get install vim -y
+53. vim my_test_file --> hello dear friends. This is inside docker --> ESC :wq
+54. cat my_test_file
+55. ls
+56. exit # --> exit the container
+57. docker ps -a --> we see the container
+58. docker start xxx
+59 ls --> and show the file, still exists. but it is good as long as the contianer survives
+
+59. docker container inspect xxx
+58. docker volume ls # deleting volume is docker volume rm my_volume_name
+60. docker volume create MY_HOST_DATA # --> creates in host (EC2)
+61. docker volume inspect MY_HOST_DATA # copy the Mountpint
+62. sudo ls /var/lib/docker/volumes/MY_HOST_DATA/_data
+62. docker run -itd -v MY_HOST_DATA:/data_in_docker ubuntu
+63. docker attach xxx xxx
+64. apt-get update -y
+53. apt-get install vim -y
+54. cd data_in_docker
+53. vim my_test.text --> hello from Docker class
+54. cat my_test
+55. exit docker
+56. docker attach xxx
+57. cd data_in_docker # --> data still exists
+58. exit
+59. docker stop xxx & docker rm xxx
+58. docker volume ls 
+60. docker volume inspect xxx
+57. sudo su
+60. sudo ls /var/xxxxxx # volume location
+60. sudo cat /var/xxx/my_test.txt
