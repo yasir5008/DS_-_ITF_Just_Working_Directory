@@ -1,3 +1,4 @@
+from codecs import unicode_escape_decode
 from numpy.random import sample
 import streamlit as st
 import pandas as pd
@@ -19,12 +20,12 @@ st.info("This is a purely informational message")
 st.error("This is an error")
 st.help(range)
 st.write("Hello, *World!* :sunglasses:")
-img = Image.open("images.jpeg")
-st.image(img,caption="cattie",width=300)
-#st.image(img,caption="cattie",use_column_width=True)
+img = Image.open("C:\Users\Yasir\Documents\GitHub\DS_-_ITF_Just_Working_Directory\Streamlit\st\images.jpeg")
+#st.image(img,caption="cattie",width=300)
+st.image(img,caption="cattie",use_column_width=True)
 
-#my_video = open("ml.mov",'rb')
-#st.video(my_video)
+my_video = open("ml.mov",'rb')
+st.video(my_video)
 
 st.video("https://www.youtube.com/watch?v=uHKfrz65KSU")
 
